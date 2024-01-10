@@ -1,7 +1,6 @@
 package frc.robot.subsystems.drive;
 
 import org.littletonrobotics.junction.Logger;
-
 import com.revrobotics.AbsoluteEncoder;
 import com.revrobotics.CANSparkBase.ControlType;
 import com.revrobotics.CANSparkLowLevel.MotorType;
