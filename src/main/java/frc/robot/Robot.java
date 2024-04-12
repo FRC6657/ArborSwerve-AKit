@@ -106,9 +106,12 @@ public class Robot extends LoggedRobot {
 
     autoChooser.addDefaultOption("None", null);
 
-    controller.a().whileTrue(Commands.runOnce(()-> drivebase.setPose(new Pose2d(0, 0, new Rotation2d(0))), drivebase));
+    controller
+        .a()
+        .whileTrue(
+            Commands.runOnce(
+                () -> drivebase.setPose(new Pose2d(0, 0, new Rotation2d(0))), drivebase));
     controller.b().whileTrue(drivebase.goToPose(new Pose2d(0, 0, new Rotation2d(0))));
-    
   }
 
   @Override
